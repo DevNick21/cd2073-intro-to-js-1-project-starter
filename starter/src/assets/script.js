@@ -49,6 +49,8 @@ function addProductToCart(productId) {
 
     if (!existingCartItem) {
       cart.push({ ...product });
+    } else if (existingCartItem) {
+      existingCartItem.quantity++;
     }
   }
 }
