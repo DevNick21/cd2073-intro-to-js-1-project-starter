@@ -128,6 +128,7 @@ function pay(amount) {
     emptyCart();
     return totalPaid - total;
   } else if ((totalPaid = total)) {
+    emptyCart();
     return 0;
   }
 }
